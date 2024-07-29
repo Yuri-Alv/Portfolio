@@ -24,7 +24,7 @@ const Skills = ({ icon, name, progress }) => {
 };
 
 Skills.propTypes = {
-  icons: PropTypes.element.isRequired,
+  icon: PropTypes.element.isRequired,
   name: PropTypes.string.isRequired,
   progress: PropTypes.number.isRequired,
 };
