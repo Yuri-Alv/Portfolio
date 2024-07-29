@@ -17,7 +17,7 @@ const WorkWidget = () => {
       company: "Hybrid Server administration",
       title: "Hybrid Server Pro| Core",
       yearStart: "2024",
-      image: "/Hybrid-Server.png",
+      image: "/hybrid-server.png",
     },
   ];
 

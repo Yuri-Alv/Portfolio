@@ -5,7 +5,7 @@ const Workcard = ({
   company,
   title,
   yearStart,
-  yearEnd = "Present",
+
   image,
 }) => {
   return (
@@ -18,6 +18,7 @@ const Workcard = ({
           height={28}
           className="h-7 w-7 object-cover object-center"
         />
+        {/*  */}
       </div>
       <div className="w-full">
         <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
@@ -28,7 +29,7 @@ const Workcard = ({
             {title}
           </div>
           <div className="text-sm text-zinc-400 dark:text-zinc-500">
-            {yearStart} - {yearEnd}
+            {yearStart}
           </div>
         </div>
       </div>
