@@ -10,9 +10,14 @@ import JavaComponent from "@/components/ui/icons/java";
 const SkillsWidget = () => {
   const skills = [
     {
+      name: "HTML",
+      icon: <HtmlComponent />,
+      progress: 100,
+    },
+    {
       name: "Java",
       icon: <JavaComponent />,
-      progress: 100,
+      progress: 50,
     },
     {
       name: "Javascript",
@@ -23,11 +28,6 @@ const SkillsWidget = () => {
       name: "CSS",
       icon: <CssComponent />,
       progress: 100,
-    },
-    {
-      name: "HTML",
-      icon: <HtmlComponent />,
-      progress: 90,
     },
   ];
 
