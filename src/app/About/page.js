@@ -5,24 +5,18 @@ import Link from "next/link";
 // Icons
 import Linkedin from "@/components/ui/icons/linkedin";
 import Github from "@/components/ui/icons/github";
-import X from "@/components/ui/icons/x";
 import EmailComponent from "@/components/ui/icons/email";
 
 export default function About() {
   const socials = [
     {
-      name: "X",
-      url: "https://www.twitter.com/jane-doe",
-      icon: <X />,
-    },
-    {
       name: "GitHub",
-      url: "https://www.github.com/jane-doe",
+      url: "https://github.com/Yuri-Alv",
       icon: <Github />,
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/jane-doe",
+      url: "https://www.linkedin.com/in/yuri-valentim-1a40602a0/",
       icon: <Linkedin />,
     },
   ];
@@ -32,27 +26,27 @@ export default function About() {
       <div className="order-2 col-start-1 row-span-3 xl:order-1">
         <TitleCard
           profile={false}
-          title="I'm Jane. I live in New York City, where I develop the future."
+          title="Behind the Code: My Story."
           paragraphs={[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur turpis et risus facilisis vestibulum. Integer luctus erat eu rutrum aliquam. Pellentesque eget rhoncus mauris. Etiam pretium neque leo, non semper erat aliquam porttitor. Pellentesque finibus vehicula euismod. Sed imperdiet diam sed tortor porttitor pellentesque. Sed venenatis lacus lobortis augue pretium, non venenatis libero posuere. Praesent quis elit molestie, facilisis nisi vitae, sagittis augue.",
-            "Nunc ornare hendrerit imperdiet. Morbi id porttitor justo. Maecenas ac consequat mi. Mauris ullamcorper lobortis orci iaculis auctor. Praesent pellentesque lacus sed metus volutpat tincidunt. Pellentesque euismod nulla augue, ac euismod augue hendrerit at. Nullam augue risus, ornare at mollis quis, iaculis in neque. Mauris ligula orci, sagittis sit amet metus sed, finibus semper nulla. Mauris ut condimentum massa. Donec nec tincidunt lectus. Curabitur commodo et ex vel dignissim. Fusce varius turpis nec augue sagittis varius. Mauris blandit purus eu purus finibus, et cursus diam finibus. Phasellus pharetra congue aliquam.",
-            "Ut risus libero, tristique quis blandit et, maximus eget arcu. Donec nulla leo, laoreet vitae nibh nec, pulvinar facilisis nulla. Curabitur sagittis augue sed enim rhoncus, sed posuere enim vulputate. Donec dapibus arcu eget ligula porta, non viverra arcu tristique. Nunc ut turpis libero. Quisque at justo sodales, consequat diam non, suscipit sem. Duis et massa id orci egestas suscipit in vel justo. Aenean venenatis id dui eget consequat. Nullam iaculis euismod velit vitae luctus. Nulla facilisi.",
+            "I was born in São Paulo, Brazil, on September 23, 2004. Growing up in a city known for its tall buildings, fast-paced life, and thriving industries, I was exposed to a dynamic environment that shaped my career and personal development. São Paulo is one of the world's largest cities, and living there provided me with various opportunities to explore different fields and interests. From an early age, I was fascinated by technology and how it influences our daily lives. This curiosity led me to discover programming when I was 13, and I took my first course, diving into the world of software development. The ability to turn ideas into reality through coding captivated me, and I knew then that this was the career path I wanted to pursue. My early experiences in São Paulo gave me a unique perspective on the impact of technology and the endless possibilities it offers.",
+            "After finishing high school, I was determined to broaden my horizons and gain exposure to global technological advancements. I believed that studying abroad would provide me with the best opportunities to learn from leading experts and immerse myself in cutting-edge technologies. This led me to Ensign College, where I am currently a freshman, studying software engineering. My journey at Ensign College has been both challenging and rewarding, as I continuously seek to expand my knowledge and skills in various programming languages and technologies. I've been actively participating in workshops, hackathons, and study groups, which have helped me gain practical experience and connect with like-minded peers. My goal is to become a versatile software engineer, capable of adapting to new technologies and solving complex problems. I am committed to making the most of my time at Ensign College and laying a strong foundation for my future career.",
+            "At 19, I am at the beginning of my career journey, but I am ambitious and eager to grow both personally and professionally. I aspire to work on innovative projects that challenge me and push the boundaries of what is possible with technology. In addition to my academic pursuits, I am passionate about contributing to open-source projects and collaborating with others in the tech community. I plan to obtain industry-recognized certifications to validate my skills and demonstrate my commitment to continuous learning. I also enjoy attending tech conferences and meetups, where I can learn from experts and network with other professionals. My long-term goal is to pursue advanced studies and specialize in areas such as artificial intelligence, data science, or cybersecurity. I am dedicated to developing a career that not only fulfills me professionally but also allows me to make a positive impact on the world through technology.",
           ]}
         />
       </div>
       <div className="order-1 flex h-fit justify-center bg-teal-500 lg:col-start-2 lg:row-start-1 lg:bg-transparent xl:order-3 xl:justify-start">
         <Image
-          src={"/Profile.jpg"}
-          alt="hero"
-          width={500}
-          height={500}
+          src="/Sao-Paulo.png"
+          alt="Origin"
+          width={700}
+          height={700}
           className="size-[464px] h-[452px] object-cover object-center 2xl:h-max 2xl:w-max"
         />
       </div>
       <div className="order-3 flex flex-col justify-around gap-1 p-1 text-zinc-800 dark:text-zinc-300 lg:order-4 lg:col-start-2 lg:row-start-2">
         {socials.map((social, key) => {
           return (
-            <div key={key} className="flex gap-1 px-2">
+            <div key={key} className="flex ">
               <Link
                 href={social.url}
                 target="_blank"
@@ -67,12 +61,12 @@ export default function About() {
       </div>
       <div className="order-4 flex w-fit border-t border-zinc-100 px-1 py-8 text-zinc-800 dark:border-zinc-600 dark:text-zinc-300 lg:order-4 lg:col-start-2 lg:row-start-3">
         <Link
-          href="mailto:john@email.com"
-          className="flex items-center gap-2 px-2"
+          href="mailto:yalves183@gmail.com"
+          className="flex items-center gap-2 px-2 "
           target="_blank"
         >
           <EmailComponent />
-          <p>jhon@email.com</p>
+          <p>yalves183@gmail.com</p>
         </Link>
       </div>
     </div>

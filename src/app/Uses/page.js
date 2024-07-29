@@ -5,24 +5,58 @@ import TitleCard from "@/components/structure/TitleCard/TitleCard";
 const Page = () => {
   const items = [
     {
-      groupName: "Group 1",
+      groupName: "WorkStation",
       items: [
-        { title: "Item 1", description: "Description 1" },
-        { title: "Item 2", description: "Description 2" },
+        {
+          title: "IdeaPad 5i",
+          description:
+            "The IdeaPad 5i keeps me efficient whether I'm at my desk or on the go. With its powerful performance and high-resolution display, it helps me tackle development tasks and design work seamlessly, no matter where I am.",
+        },
       ],
     },
     {
-      groupName: "Group 2",
+      groupName: "Development Tools",
       items: [
-        { title: "Item 3", description: "Description 3" },
-        { title: "Item 4", description: "Description 4" },
+        {
+          title: "Vscode with WSL",
+          description:
+            "Using VSCode with WSL, I can code effortlessly in a Linux environment while still working from Windows. This setup ensures smooth development workflows, making it easy to manage projects, debug code, and run various tools directly from my IDE.",
+        },
+        {
+          title: "GitHub Desktop",
+          description:
+            "GitHub Desktop integrates seamlessly with my workflow, providing a straightforward way to manage repositories and version control. It simplifies committing changes, branching, and merging, so I can focus on coding rather than Git commands.",
+        },
       ],
     },
     {
-      groupName: "Group 3",
+      groupName: "Design",
       items: [
-        { title: "Item 5", description: "Description 5" },
-        { title: "Item 6", description: "Description 6" },
+        {
+          title: "Whimsical",
+          description:
+            "Whimsical is an intuitive tool that excels at creating both low-fidelity and high-fidelity wireframes. Its easy-to-use interface allows me to quickly sketch out ideas and refine them into detailed designs.",
+        },
+        {
+          title: "Figma",
+          description:
+            "Figma lets me design and prototype with ease, whether I’m at my desk or collaborating remotely. Its real-time collaboration features ensure that I can work on UI/UX designs and share updates instantly with my team, keeping everyone aligned.",
+        },
+      ],
+    },
+    {
+      groupName: "Productivity",
+      items: [
+        {
+          title: "Notion",
+          description:
+            "Notion keeps my projects and tasks organized, syncing across all my devices. Whether I’m working on a detailed project plan or jotting down quick notes, I can stay productive and keep track of everything no matter where I am.",
+        },
+        {
+          title: "Google calendar",
+          description:
+            "Connected with both my phone and computer the google calendar permits me to stay on top of deadlines independly if I am on my computer or away at a park.",
+        },
       ],
     },
   ];
@@ -32,17 +66,9 @@ const Page = () => {
       <div className="flex flex-col gap-6 lg:w-full lg:max-w-3xl">
         {" "}
         <TitleCard
-          title={
-            "Software I use, gadgets I love, and other things I recommend."
-          }
+          title={"Setup I use, gadgets I love, and other things I recommend."}
           paragraphs={[
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam\
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat\
-        volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed\
-        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat\
-        volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed\
-        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat\
-        volutpat.",
+            "Welcome to the section where I share the tools and gadgets that play a significant role in my daily workflow. In this page, you'll find a curated list of software and hardware that I rely on to enhance my productivity and overall efficiency. From essential development tools and design software to the my setup that I work on everyday, I believe these recommendations offer valuable insights into how I achieve my best work.",
           ]}
         />
       </div>

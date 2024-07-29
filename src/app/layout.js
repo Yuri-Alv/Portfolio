@@ -3,7 +3,7 @@ import Footer from "@/components/sections/footer/footer";
 import Header from "@/components/sections/header/header";
 
 export const metadata = {
-  title: "Portfolio - Home",
+  title: "Portfolio",
   description: "Portfolio website for showcasing projects and blog posts",
 };
 

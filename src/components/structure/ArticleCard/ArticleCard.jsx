@@ -16,15 +16,7 @@ const ArticleCard = ({ date, title, content, link = "#" }) => {
       <div className="pt-2">
         <p className="text-sm">{content}</p>
       </div>
-      <div className="flex items-baseline gap-3 pt-4">
-        <a
-          href={link}
-          className="text-sm text-teal-500 hover:text-teal-600 focus:text-teal-500"
-        >
-          Read article
-        </a>
-        <RightComponent />
-      </div>
+      <div className="flex items-baseline gap-3 pt-4"></div>
     </article>
   );
 };
@@ -33,7 +25,6 @@ ArticleCard.propTypes = {
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-  link: PropTypes.string,
 };
 
 export default ArticleCard;

@@ -26,7 +26,7 @@ const Skills = ({ icon, name, progress }) => {
 Skills.propTypes = {
   icons: PropTypes.element.isRequired,
   name: PropTypes.string.isRequired,
-  progress: PropTypes.object.isRequired,
+  progress: PropTypes.number.isRequired,
 };
 
 export default Skills;

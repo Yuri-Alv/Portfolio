@@ -6,54 +6,19 @@ export default function Projects() {
   const projects = [
     {
       logo: "/ensignlogo.png",
-      name: "Company 1",
+      name: "Portfolio",
       content:
-        "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum habitasse aenean neque quam torquent eu penatibus!",
-      link: "#",
-    },
-    {
-      logo: "/ensignlogo.png",
-      name: "Company 2",
-      content:
-        "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum habitasse aenean neque quam torquent eu penatibus!",
-      link: "#",
-    },
-    {
-      logo: "/ensignlogo.png",
-      name: "Company 3",
-      content:
-        "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum habitasse aenean neque quam torquent eu penatibus!",
-      link: "#",
-    },
-    {
-      logo: "/ensignlogo.png",
-      name: "Company 4",
-      content:
-        "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum habitasse aenean neque quam torquent eu penatibus!",
-      link: "#",
-    },
-    {
-      logo: "/ensignlogo.png",
-      name: "Company 5",
-      content:
-        "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum habitasse aenean neque quam torquent eu penatibus!",
-      link: "#",
-    },
-    {
-      logo: "/ensignlogo.png",
-      name: "Company 6",
-      content:
-        "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum habitasse aenean neque quam torquent eu penatibus!",
-      link: "#",
+        "This portfolio serves as a comprehensive showcase of my work and development as a software engineer.",
+      link: "https://yuri-alv.github.io/portfolio/About",
     },
   ];
 
   return (
     <div className="flex flex-col gap-6">
       <TitleCard
-        title="Things I've Made Trying to Put my Dent Into the Universe"
+        title="Projects: A Journey of Development"
         paragraphs={[
-          "Lorem ipsum odor amet, consectetuer adipiscing elit. Dignissim tellus sit fringilla porttitor; dictumst dignissim ridiculus varius? Rhoncus pulvinar pharetra ullamcorper eu; vestibulum per. Cursus dignissim a parturient per platea auctor nisi maecenas cras. Posuere urna habitant ullamcorper aliquet enim ullamcorper accumsan hac maximus? Etiam primis euismod condimentum ultrices platea. Amet platea metus varius feugiat nulla nam habitasse.",
+          "Welcome to my Projects page! Here, you'll find a curated selection of my work, showcasing the diverse range of skills and creativity I bring to software development. Each project represents a step in my journey to turn complex challenges into innovative solutions. I invite you to explore my portfolio and see how my passion for technology translates into impactful results.",
         ]}
       />
       <div className="mt-4 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

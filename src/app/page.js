@@ -7,42 +7,34 @@ import SkillsWidget from "@/components/structure/SkillsWidget/SkillsWidget";
 //Icons
 import Linkedin from "@/components/ui/icons/linkedin";
 import Github from "@/components/ui/icons/github";
-import X from "@/components/ui/icons/x";
 import Link from "next/link";
 
 export default function Home() {
   const links = [
     {
-      name: "X",
-      url: "https://www.twitter.com/jane-doe",
-      icon: <X />,
-    },
-    {
       name: "GitHub",
-      url: "https://www.github.com/jane-doe",
+      url: "https://github.com/Yuri-Alv",
       icon: <Github />,
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/jane-doe",
+      url: "https://www.linkedin.com/in/yuri-valentim-1a40602a0/",
       icon: <Linkedin />,
     },
   ];
 
   const articles = [
     {
-      date: "Nov 15, 2021",
-      title: "Everything you need to know about React",
+      date: "2022",
+      title: "Gold medal in the Brazillian Astronomy Olympiad",
       content:
-        "The ability to build stuff in React is one of the hottest skills to have today in software engineering. There is a lot of demand for React developers among startups as well as MNCs.",
-      link: "https://medium.com/the-research-nest/everything-you-need-to-know-about-react-ab24da4275ea",
+        "In 2022, I achieved a gold medal in the Brazilian Astronomy Olympiad, a prestigious national competition that tests students' knowledge and understanding of astronomy and related sciences.",
     },
     {
-      date: "Sep 2, 2020",
-      title: "The Missing Introduction to React",
+      date: "Mar. 25, 2021",
+      title: "Participation on the Brazillian Science Olympiad",
       content:
-        "React is the world’s most popular JavaScript framework, but it’s not cool because it’s popular. It’s popular because it’s cool. Most React introductions jump right into showing you examples of how to use React, and skip the “why”.",
-      link: "https://medium.com/javascript-scene/the-missing-introduction-to-react-62837cb2fd76",
+        "In 2021, I participated in the Brazilian Science Olympiad, a national competition that challenges students in various scientific disciplines, including biology, chemistry, physics, and earth sciences.",
     },
   ];
 
@@ -51,9 +43,9 @@ export default function Home() {
       <div className="flex flex-col gap-6 lg:w-full lg:max-w-3xl">
         <TitleCard
           profile={true}
-          title={"Software engineer, father, and believer"}
+          title={"Yuri Valentim -Software Engineer and Problem Solver"}
           paragraphs={[
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur turpis et risus facilisis vestibulum. Integer luctus erat eu rutrum aliquam. Pellentesque eget rhoncus mauris. Etiam pretium neque leo, non semper erat aliquam porttitor. Pellentesque finibus vehicula euismod. Sed imperdiet diam sed tortor porttitor pellentesque. Sed venenatis lacus lobortis augue pretium, non venenatis libero posuere. Praesent quis elit molestie, facilisis nisi vitae, sagittis augue. ",
+            "Welcome to my portfolio! I'm Yuri Valentim, a passionate software engineer dedicated to being a problem solver. I work with the intention to learn and develop my skills and myself always delivering. I love to tackle complex challenges and turning ideas into reality. Learn more about my journey, skills, and projects as I continue to improve and push the limits of technology.",
           ]}
         />
         <div className="flex gap-3">
@@ -75,7 +67,6 @@ export default function Home() {
                 date={article.date}
                 title={article.title}
                 content={article.content}
-                link={article.link}
               />
             );
           })}
